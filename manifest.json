@@ -1,10 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Bookmark Folder Finder",
+  "name": "Bookmark Folder Locator",
   "version": "1.0",
-  "description": "Finds the folder where a bookmark is saved.",
+  "description": "Find the exact folder path of any bookmark in your Chrome browser.",
   "permissions": ["bookmarks"],
-  "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
   },
