@@ -1,6 +1,6 @@
 {
-  "manifest_version": 3,
-  "name": "Bookmark Folder Locator",
+  "manifest_version": 4,
+  "name": "Bookmark Folder Finder",
   "version": "1.0",
   "description": "Find the exact folder path of any bookmark in your Chrome browser.",
   "permissions": ["bookmarks"],

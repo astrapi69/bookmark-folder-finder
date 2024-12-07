@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the source directory where your extension files are located
-SOURCE_DIR="/home/astrapi69/dev/git/hub/bookmark-folder-finder/"
+SOURCE_DIR="/run/media/astrapi69/backups/git/hub/astrapi69/bookmark-folder-finder/"
 
 # Set the destination directory where you want to copy the extension files
 DEST_DIR="./extension_package"

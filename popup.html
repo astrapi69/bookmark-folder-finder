@@ -1,17 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Find Bookmark Folder</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark Folder Locator</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 10px; }
-    #output { margin-top: 10px; color: green; }
+    /* General styling */
+    body {
+      width: 400px; /* Adjust this value to your desired width */
+      min-width: 400px;
+      max-width: 100%;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    h3 {
+      text-align: center;
+      color: #0073e6;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: white;
+      background: #0073e6;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    button:hover {
+      background: #005bb5;
+    }
+
+    #output {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    #output p {
+      margin: 5px 0;
+    }
+
+    a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
-  <h3>Find Bookmark Folder</h3>
-  <input type="text" id="search" placeholder="Enter bookmark title or URL" />
+  <h3>Bookmark Folder Locator</h3>
+  <input type="text" id="search" placeholder="Enter bookmark title or URL">
   <button id="searchButton">Search</button>
-  <div id="output"></div>
+  <div id="output">Your results will appear here.</div>
+  <div class="footer">Powered by Chrome Bookmark API</div>
   <script src="popup.js"></script>
 </body>
 </html>
